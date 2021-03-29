@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/PRATICA%20AULA%203/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Linguagem de marcação de hipertexto</title>
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
+
+<body>
+    <h1>HTML - Linguagem de marcação de hipertexto</h1>
+    <h2>Estrutura Básica</h2>
+        <p>Documentos HTML são divididos em algumas partes básicas.
+            Antes de iniciar os elementos, devemos utilizar uma declaração &lt;!DOCTYPE html&gt; na
+            primeira linha.<br>
+            O elemento raíz “html” é de onde partem todos os outros elementos, ele é composto das
+            partes “head” e “body”.</p>
+
+    <h3>Tags e elementos</h3>
+            <p>Na marcação HTML, cada elemento é representado por uma tag de abertura, o conteúdo e
+                uma tag de fechamento. Tags de abertura são escritas no formato &lt;nome-da-tag&gt; e tags de
+                fechamento no formato &lt;/nome-da-tag&gt; </p>
+
+    <h3>Elementos de texto</h3>
+            <p>Alguns elementos de texto que podemos utilizar:</p>
+            <ul>
+                <li>parágrafo - tag &lt;p&gt;</li>
+                <li>títulos - tags &lt;h1&gt; a &lt;h6&gt;</li>
+                <li>links - tag &lt;a&gt;</li>
+            </ul>
+    <h2>Criando uma nova página</h2>
+            <p>Para criar uma nova página HTML devemos:</p>
+                <ol>
+                    <li>Criar um novo arquivo com a extensão .html</li>
+                    <li>Inserir a declaração doctype na primeira linha</li>
+                    <li>Criar os elementos html, head e body</li>
+                    <li>Inserir o conteúdo</li>
+                </ol>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
